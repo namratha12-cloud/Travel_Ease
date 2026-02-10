@@ -47,6 +47,7 @@ Once extracted, you will find a `backend` directory with the following structure
 - **Booking Management**: Book tickets with availability checks.
 - **Passenger History**: View past bookings.
 
+<<<<<<< HEAD
 ## 💻 Languages Used
 - **JavaScript (Node.js)**
 
@@ -59,3 +60,8 @@ The project relies on the following npm packages:
 | **mysql2** | MySQL client for Node.js, focusing on performance and prepared statements. |
 | **cors** | Middleware to enable Cross-Origin Resource Sharing (CORS). |
 | **nodemon** | (Dev Dependency) Utility that monitors for changes and automatically restarts the server. |
+=======
+## 🛠️ Technologies
+- Node.js & Express
+- MySQL Database
+>>>>>>> f1ed3d90c259ca492955181c07f0e881c8084125
