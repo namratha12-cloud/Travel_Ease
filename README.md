@@ -15,41 +15,9 @@ Once extracted, you will find a `backend` directory with the following structure
 - **`node_modules/`**: Pre-installed dependencies (though running `npm install` is recommended).
 - **`package.json`**: Project metadata and dependency list.
 
-## 🚀 Getting Started
-
-1.  **Extract the Archive**:
-    Unzip `Travelease.zip` to your desired location.
-
-2.  **Navigate to the Backend**:
-    ```bash
-    cd backend
-    ```
-
-3.  **Install/Update Dependencies**:
-    ```bash
-    npm install
-    ```
-
-4.  **Configure Database**:
-    - Ensure MySQL is running on port 3306.
-    - Create a database named `Travels1`.
-    - Update credentials in `server.js` if necessary.
-
-5.  **Run the Server**:
-    ```bash
-    node server.js
-    ```
-
-
-## 🔌 Features
-
-- **Bus Search**: Find buses by source, destination, and date.
-- **Booking Management**: Book tickets with availability checks.
-- **Passenger History**: View past bookings.
-
-<<<<<<< HEAD
-## 💻 Languages Used
-- **JavaScript (Node.js)**
+## � Languages Used
+- **JavaScript (Node.js)**: The core logic server-side.
+- **SQL**: For database schema definitions and queries.
 
 ## 📦 Modules & Dependencies
 The project relies on the following npm packages:
@@ -60,8 +28,45 @@ The project relies on the following npm packages:
 | **mysql2** | MySQL client for Node.js, focusing on performance and prepared statements. |
 | **cors** | Middleware to enable Cross-Origin Resource Sharing (CORS). |
 | **nodemon** | (Dev Dependency) Utility that monitors for changes and automatically restarts the server. |
-=======
-## 🛠️ Technologies
-- Node.js & Express
-- MySQL Database
->>>>>>> f1ed3d90c259ca492955181c07f0e881c8084125
+
+## � Suggested Workflow
+
+To successfully run and develop this project, follow this workflow:
+
+1.  **🗄️ Database Setup**
+    - Install MySQL if not already available.
+    - Create a new database named `Travels1`.
+    - Create the required tables (`bus`, `booking`, `agency`). *Tip: Look at the SQL queries in `server.js` to infer the schema.*
+
+2.  **⚙️ Configuration**
+    - Open `backend/server.js`.
+    - Update the `mysql.createConnection` settings (host, user, password) to match your local MySQL setup.
+
+3.  **📦 Installation**
+    - Open a terminal in the `backend` folder.
+    - Run `npm install` to download dependencies.
+
+4.  **🚀 Development**
+    - Start the server in development mode:
+      ```bash
+      npm run dev
+      ```
+    - The server will restart automatically when you make code changes.
+
+5.  **🧪 Testing**
+    - Use tools like **Postman** or **cURL** to test the API endpoints:
+      - `GET http://localhost:7000/search-bus?from=X&to=Y&date=Z`
+      - `POST http://localhost:7000/book`
+
+## 🔌 API Features
+
+- **Bus Search**: Find buses by source, destination, and date.
+- **Booking Management**: Book tickets with availability checks.
+- **Passenger History**: View past bookings.
+
+## 🚀 Getting Started (Quick Run)
+
+1.  **Extract the Archive**: Unzip `Travelease.zip`.
+2.  **Navigate**: `cd backend`
+3.  **Install**: `npm install`
+4.  **Run**: `node server.js`
