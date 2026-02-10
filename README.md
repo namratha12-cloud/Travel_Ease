@@ -1,5 +1,5 @@
-# Travel_Ease Module
 
+<<<<<<< HEAD
 This repository contains the source code for the **Travel_Ease** backend module, packaged as a ZIP file.
 
 ## 📦 Contents
@@ -70,3 +70,5 @@ To successfully run and develop this project, follow this workflow:
 2.  **Navigate**: `cd backend`
 3.  **Install**: `npm install`
 4.  **Run**: `node server.js`
+=======
+>>>>>>> 503d60c2b56262e2d7b7327e063240ee816d5482
